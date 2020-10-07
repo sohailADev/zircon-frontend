@@ -79,7 +79,7 @@ class Post extends React.Component {
                                     <Typography variant="body1" >
                                         <img src={post.image} alt='' />
 
-                                        <img src={process.env.PUBLIC_URL + '/logo.png'} alt='' />
+                                       
 
                                     </Typography>
                                     <Typography variant="body2" color="textSecondary" component="p">
