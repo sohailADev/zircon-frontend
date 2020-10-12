@@ -27,7 +27,11 @@ class Post extends React.Component {
 
 
     fetchPosts = () => {
-        return axios.get(requests.fetchPosts)
+        return axios.get(requests.fetchPosts, {
+            headers: {
+                'Authorization': 'Token 9b2927815f2793202683f56de5583530e16db4bd'
+            }
+        })
             .then((response) => {
                 // handle success
                 console.log(response)
@@ -79,7 +83,7 @@ class Post extends React.Component {
                                     <Typography variant="body1" >
                                         <img src={post.image} alt='' />
 
-                                       
+
 
                                     </Typography>
                                     <Typography variant="body2" color="textSecondary" component="p">
